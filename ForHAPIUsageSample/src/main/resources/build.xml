@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ForNDHM" basedir="../">
+		
+		<copy todir="resources/ndhm-fhir-r4-usage-samples/samplecodes">
+			<fileset dir="java/in/nrces/ndhm/fhir/r4/clinicalartifacts"> 
+				<include name="**/**" />
+			</fileset>
+		</copy>
+		<copy todir="resources/ndhm-fhir-r4-usage-samples/samplecodes">
+			<fileset dir="java/in/nrces/ndhm/fhir/r4/resources"> 
+				<include name="**/**" />
+			</fileset>
+		</copy>
+		<copy todir="resources/ndhm-fhir-r4-usage-samples">
+			<fileset dir="resources/">
+				<include name="README.txt" />
+			</fileset>
+		</copy>
+		
+		<zip basedir="resources/ndhm-fhir-r4-usage-samples" destfile="resources/ndhm-fhir-r4-usage-samples.zip"  /> 
+		 <delete dir="resources/ndhm-fhir-r4-usage-samples"/>
+		    
+</project>
